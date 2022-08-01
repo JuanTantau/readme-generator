@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 const renderLicenseBadge =license =>{ 
     return (!license.length)?'':
-    `![badge](https://img.shields.io/badge/license-${license}-brightgreen)`;
+    `![badge](https://img.shields.io/badge/license-${license}-blue)`;
   
   };              
   
@@ -23,10 +23,10 @@ const renderLicenseBadge =license =>{
   
   // function to generate markdown for README
   const generateMarkdown = data => {
-    const{projectTitle,license,description, installation, usage, contributing,tests, acknowledgments,questions,userName,}= data;
+    const{title,license,description, installation, usage, contributing,tests, acknowledgments,questions,userName,}= data;
     
     return `
-    # ${projectTitle}
+    # ${title}
     
     ## Description
   
